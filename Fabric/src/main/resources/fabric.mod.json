@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "consolefilter",
+	"version": "${version}",
+	"name": "ConsoleFilter",
+	"description": "A mod that enables the user to filter specific console messages/logs in Minecraft servers",
+	"authors": [
+		"Sattik03"
+	],
+	"contact": {
+		"sources": "https://github.com/Sattik-Tarafder/ConsoleFilter"
+	},
+	"license": "MIT",
+	"icon": "assets/consolefilter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.consolefilter.ConsoleFilter"
+		]
+	},
+	"mixins": [
+		"consolefilter.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
