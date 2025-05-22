@@ -26,7 +26,6 @@ Helps keep your logs clean during development or gameplay.
 ## 🔗 Downloads
 
 - 📦 [CurseForge Page](https://www.curseforge.com/minecraft/mc-mods/consolefilter)
-- 📦 [Modrinth Page](https://modrinth.com/mod/consolefilter)
 
 
 ---
