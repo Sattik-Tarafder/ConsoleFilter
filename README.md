@@ -9,7 +9,7 @@ Helps keep your logs clean during development or gameplay.
 
 | Minecraft Version | Loader   | Status       |
 |-------------------|----------|--------------|
-|  1.21.1 - 1.21.4  | NeoForge | ✅ Confirmed |
+|  1.21.1 - 1.21.5  | NeoForge | ✅ Confirmed |
 |  1.21.1 - 1.21.5  |  Fabric  | ✅ Confirmed |
 
 ---
