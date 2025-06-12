@@ -2,6 +2,7 @@ package com.example.consolefilter;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,9 +25,12 @@ public class ConsoleFilter implements ModInitializer {
 		LOGGER.info("ConsoleFilter Mod initialized");
 		loadConfig();
 
+		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
+			ConsoleFilterCommand.register(dispatcher);
+		});
 	}
 
-	private void loadConfig() {
+	public static void loadConfig() {
 		Path configPath = Path.of("config", "consolefilter", "filter_config.txt");
 
 		List<String> defaultConfig = Arrays.asList(
@@ -81,4 +85,5 @@ public class ConsoleFilter implements ModInitializer {
 			LOGGER.error("Failed to create config file", e);
 		}
 	}
+
 }
