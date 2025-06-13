@@ -18,7 +18,7 @@ Helps keep your logs clean during development or gameplay.
 ## 🧑‍💻 Development Info
 
 - Language: Java 21
-- Loaders: [NeoForge](https://neoforged.net/) | [Fabric](https://fabricmc.net/)
+- Loaders: [NeoForge](https://neoforged.net/) | [Fabric](https://fabricmc.net/) | [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.21.html)
 - Configuration: Simple text file for keyword-based filtering
 - Source: [GitHub Repository](https://github.com/Sattik-Tarafder/ConsoleFilter)
 
