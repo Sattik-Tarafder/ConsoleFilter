@@ -11,6 +11,7 @@ Helps keep your logs clean during development or gameplay.
 |-------------------|----------|--------------|
 |  1.21.1 - 1.21.5  | NeoForge | ✅ Confirmed |
 |  1.21.1 - 1.21.5  |  Fabric  | ✅ Confirmed |
+|   1.21 - 1.21.5   |  Forge   | ✅ Confirmed |
 
 ---
 
