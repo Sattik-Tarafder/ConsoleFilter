@@ -15,13 +15,13 @@ public class ConsoleFilterCommand {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
         dispatcher.register(CommandManager.literal("consolefilter")
-                .requires(source -> source.hasPermissionLevel(2)) // OPs only
+                .requires(source -> source.hasPermissionLevel(2))
                 .then(CommandManager.literal("reload")
                         .executes(context -> {
-                            ConsoleFilter.loadConfig(); // Your method to reload config
+                            ConsoleFilter.loadConfig();
                             LOGGER.info("ConsoleFilter config reloaded by {}", context.getSource().getName());
 
-                            // Broadcast message to all OPs
+                            
                             MinecraftServer server = context.getSource().getServer();
                             for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
                                 if (server.getPlayerManager().isOperator(player.getGameProfile())) {
@@ -29,7 +29,7 @@ public class ConsoleFilterCommand {
                                 }
                             }
 
-                            // Also notify the command executor
+                            
                             return 1;
                         })
                 )
